@@ -1,7 +1,6 @@
 // This is where we will make requests to the backend
 import { GET_ITEMS, ADD_ITEM, DELETE_ITEM, ITEMS_LOADING } from './types';
 import axios from 'axios';
-import reducers from '../reducers';
 
 export const getItems = () => dispatch => {
     dispatch(setItemsLoading());
